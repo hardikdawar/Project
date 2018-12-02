@@ -27,10 +27,13 @@ public class check extends HttpServlet {
         String email=req.getParameter("email");
         String password=req.getParameter("pass");
         String password1 = req.getParameter("pass1");
+        String signup1 = req.getParameter("signup");
+        
         
       RecordCheck rs = new RecordCheck();
+      out.println("data entered successfully");
         try {
-            rs.insert(uname , email, password, password1);
+            rs.insert(uname , email, password, password1,signup1);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(check.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {

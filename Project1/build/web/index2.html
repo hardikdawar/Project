@@ -1,105 +1,74 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
-
+<html lang="en">
 <head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="codepixer">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Online student and Assesment Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form </title>
 
-	<!--
-			Google Font
-			============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts1/material-icon/css/material-design-iconic-font.min.css">
 
-	<!--
-			CSS
-			============================================= -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
-	<link rel="stylesheet" href="css2/linearicons.css">
-	<link rel="stylesheet" href="css2/font-awesome.min.css">
-	<link rel="stylesheet" href="css2/bootstrap.css">
-	<link rel="stylesheet" href="css2/magnific-popup.css">
-	<link rel="stylesheet" href="css2/nice-select.css">
-	<link rel="stylesheet" href="css2/animate.min.css">
-	<link rel="stylesheet" href="css2/owl.carousel.css">
-	<link rel="stylesheet" href="css2/main.css">
-	<style>
-
-</style>
-	
+    <!-- Main css -->
+    <link rel="stylesheet" href="css1/style.css">
 </head>
-
 <body>
 
-	<!-- Start Header Area -->
-	<header id="header">
-		<div class="container">
-			<div class="row align-items-center justify-content-between d-flex">
-				<div id="logo">
-					<a href="index.html"><img src="logo.png" alt="" title="" height="100px" width="150px"/></a>
-				</div>
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li class="btn"><a href="index.html">Home</a></li>
-						<li class="btn"><a href="about.html">About</a></li>
-						
-						<li class="btn"><a href="index1.html">Sign up</a>
-						<li class="btn"><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav><!-- #nav-menu-container -->
-			</div>
-		</div>
-	</header>
-	<!-- End Header Area -->
+    <div class="main">
 
+        <section class="signup">
+            <!-- <img src="images1/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="post" action="check1">
+                        <h2 class="form-title">Create account</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="pass1" id="re_password" placeholder="Repeat your password"/>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" name="signup" id="sign">
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <span class="loginhere"> Which is your favourite movie ?</span>
+                            <input type="text" class="form-input" name="favmovie"  />
+                        </div>
+                        <div class="form-group">
+                            <span class="loginhere"> Which is your favourite Book ?</span>
+                            <input type="text" class="form-input" name="favbook"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a href="index.html" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-	<!-- Start Banner Area -->
-	<img src="b.png" width="100%" height="750px"><br>
-		<!-- End Banner Area -->
+    </div>
 
-
-	
-	
-	<!-- End Footer Area -->
-
-	<!-- ####################### Start Scroll to Top Area ####################### -->
-	<div id="back-top">
-		<a title="Go to Top" href="#"></a>
-	</div>
-	<!-- ####################### End Scroll to Top Area ####################### -->
-
-	<script src="js2/vendor/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
-	<script src="js2/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-	<script src="js2/easing.min.js"></script>
-	<script src="js2/hoverIntent.js"></script>
-	<script src="js2/superfish.min.js"></script>
-	<script src="js2/jquery.ajaxchimp.min.js"></script>
-	<script src="js2/jquery.magnific-popup.min.js"></script>
-	<script src="js2/owl.carousel.min.js"></script>
-	<script src="js2/owl-carousel-thumb.min.js"></script>
-	<script src="js2/jquery.sticky.js"></script>
-	<script src="js2/jquery.nice-select.min.js"></script>
-	<script src="js2/parallax.min.js"></script>
-	<script src="js2/waypoints.min.js"></script>
-	<script src="js2/wow.min.js"></script>
-	<script src="js2/jquery.counterup.min.js"></script>
-	<script src="js2/mail-script.js"></script>
-	<script src="js2/main.js"></script>
-</body>
-
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

@@ -31,13 +31,33 @@ public class loginDAO {
         this.st=con.createStatement();
     }
    
-    public String checkInfo(String email1,String password) throws SQLException
+    public String checkInfo(String email1,String password,String usertype1) throws SQLException
     {
-         String query="Select * from data where email='"+email1+"' and password ='"+password+"'";
-        ResultSet rs=st.executeQuery(query);
+         
+        
+        if(usertype1.equals("admin")){
+            String query="Select * from data where email='"+email1+"' and password ='"+password+"'";
+            ResultSet rs=st.executeQuery(query);
         while(rs.next())
         {
-            return "Login successfull";
+            return "admin";
+        }
+    }
+        else if(usertype1.equals("student")){
+            String query="Select * from data1 where email='"+email1+"' and password ='"+password+"'";
+            ResultSet rs=st.executeQuery(query);
+        while(rs.next())
+        {
+            return "student";
+        }
+        }
+        else if(usertype1.equals("teacher")){
+            String query="Select * from data2 where email='"+email1+"' and password ='"+password+"'";
+            ResultSet rs=st.executeQuery(query);
+        while(rs.next())
+        {
+            return "teacher";
+        }
         }
         return "invalid login details";
     }
@@ -47,3 +67,4 @@ public class loginDAO {
     }
     
 }
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {height: 1500px}
+  
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+      }
+      .row.content {height: auto;} 
+    }
+    body{
+        overflow: hidden;
+        background:#f1f1f1;
+    }
+  
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="logo1.png">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="index3.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.jsp"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" style="padding-top:0;">
+  <div class="row content">
+  <div class="col-sm-2 sidenav">
+      <h4>Course related</h4>
+              <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Uploaded Assignments</a></li>
+        <li><a href="#section2">Submitted Assignments</a></li>
+              </ul><br>
+
+</div>
+<div class="col-sm-8 sidenav">
+    <img src="laptop.jpg" width="100%">
+
+</div>
+    <div class="col-sm-2 sidenav">
+      <h4>Student related</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="enterstudentid.jsp">Marks</a></li>
+        <li><a href="#section3">Attendence</a></li>
+      </ul><br>
+    </div>
+	
+</div>
+</div>
+
+</body>
+</html>

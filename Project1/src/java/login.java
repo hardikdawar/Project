@@ -24,16 +24,22 @@ public class login extends HttpServlet {
     {
         String email1 = request.getParameter("email");
         String password = request.getParameter("pass");
+        String usertype1=request.getParameter("usertype");
         
         PrintWriter out = response.getWriter();
        
         
         try {
             loginDAO l = new loginDAO();
-            String result = l.checkInfo(email1, password);
-            if(result.equals("Login successfull")){
-            RequestDispatcher rd=request.getRequestDispatcher("index2.html");
-            rd.forward(request, response);
+            String result = l.checkInfo(email1, password,usertype1);
+            if(result.equals("admin")){
+            response.sendRedirect("template3.html");
+            }
+            else if(result.equals("student")){
+            response.sendRedirect("template.html");
+            }
+            else if(result.equals("teacher")){
+            response.sendRedirect("teacher.html");
             }
             else{
             RequestDispatcher rd=request.getRequestDispatcher("index.html");

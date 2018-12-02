@@ -12,6 +12,22 @@
         <servlet-name>check</servlet-name>
         <servlet-class>check</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changePass</servlet-name>
+        <servlet-class>changePass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updatepass</servlet-name>
+        <servlet-class>updatepass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>check1</servlet-name>
+        <servlet-class>check1</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -23,6 +39,22 @@
     <servlet-mapping>
         <servlet-name>check</servlet-name>
         <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changePass</servlet-name>
+        <url-pattern>/changePass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updatepass</servlet-name>
+        <url-pattern>/updatepass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>check1</servlet-name>
+        <url-pattern>/check1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

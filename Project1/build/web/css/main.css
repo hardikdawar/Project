@@ -166,6 +166,7 @@ iframe {
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -174,11 +175,12 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 1px;
   
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;;
+  background:linear-gradient(-135deg,black,white);
 }
 
 
